@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Form | Al-Meerod Academy</title>
+  <meta name="description" content="Online Admission Form for Al-Meerod Academy - Creche, Nursery, Primary, Complete Quran Memorisation and Arabic Madrasat.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Al-Meerod Academy Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html" class="active">Admissions</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="contact.html">Contact</a>
+        <a href="admissions.html" class="btn-admit">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Admission Application Form</h1>
+      <p>As-salamu alaykum warahmatullahi wabarakatuhu</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <div class="contact-form">
+        <p style="margin-bottom: 24px; color: var(--text-muted);">
+          Please fill this form carefully. After submitting, you will still need to bring the required documents to the school.
+        </p>
+
+        <form action="https://formsubmit.co/almeerodacademy026@gmail.com" method="POST">
+          <!-- FormSubmit settings -->
+          <input type="hidden" name="_subject" value="New Admission Application - Al-Meerod Academy">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://yourusername.github.io/al-meerod-academy/admissions.html">
+
+          <h3 style="color: var(--navy); margin-bottom: 20px;">Student Information</h3>
+
+          <div class="form-group">
+            <label for="student_name">Full Name of Student *</label>
+            <input type="text" id="student_name" name="Student Full Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender *</label>
+            <select id="gender" name="Gender" required>
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="Date of Birth" required>
+          </div>
+
+          <div class="form-group">
+            <label for="class">Class Applying For *</label>
+            <select id="class" name="Class Applying For" required>
+              <option value="">Select Class</option>
+              <optgroup label="Western Education">
+                <option value="Creche">Creche</option>
+                <option value="Nursery 1">Nursery 1</option>
+                <option value="Nursery 2">Nursery 2</option>
+                <option value="Nursery 3">Nursery 3</option>
+                <option value="Basic 1">Basic 1</option>
+                <option value="Basic 2">Basic 2</option>
+                <option value="Basic 3">Basic 3</option>
+                <option value="Basic 4">Basic 4</option>
+                <option value="Basic 5">Basic 5</option>
+                <option value="Basic 6">Basic 6</option>
+              </optgroup>
+              <optgroup label="Complete Quran Memorisation">
+                <option value="Complete Quran Memorisation">Complete Quran Memorisation</option>
+              </optgroup>
+              <optgroup label="Arabic Madrasat">
+                <option value="Idaadiyyah">Idaadiyyah (الإعدادية)</option>
+                <option value="Mutawassitah">Mutawassitah (المتوسطة)</option>
+                <option value="Thanaawiyyah">Thanaawiyyah (الثانوية)</option>
+              </optgroup>
+              <optgroup label="Adult Education">
+                <option value="Adult Education">Adult Education (Male & Female)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="boarding">Day or Boarding? *</label>
+            <select id="boarding" name="Day or Boarding" required>
+              <option value="">Select Option</option>
+              <option value="Day">Day</option>
+              <option value="Boarding">Boarding</option>
+            </select>
+          </div>
+
+          <h3 style="color: var(--navy); margin: 30px 0 20px;">Parent / Guardian Information</h3>
+
+          <div class="form-group">
+            <label for="parent_name">Parent / Guardian Full Name *</label>
+            <input type="text" id="parent_name" name="Parent/Guardian Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="relationship">Relationship to Student *</label>
+            <input type="text" id="relationship" name="Relationship" required placeholder="e.g. Father, Mother, Guardian">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="Phone Number" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email">
+          </div>
+
+          <div class="form-group">
+            <label for="address">Home Address *</label>
+            <textarea id="address" name="Home Address" required rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="previous_school">Previous School (if any)</label>
+            <input type="text" id="previous_school" name="Previous School">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Information / Message</label>
+            <textarea id="message" name="Additional Message" rows="4"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Submit Application</button>
+        </form>
+
+        <p style="margin-top: 24px; font-size: 0.9rem; color: var(--text-muted);">
+          After submitting this form, please prepare the required documents and visit the school or contact us.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Al-Meerod Academy">
+          <p>Nurturing Faith, Knowledge & Excellence from the Earliest Years.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <ul>
+            <li>Ilobi Oke, Opp. Old Barracks,<br>Ajilete, Yewa, Ogun State</li>
+            <li style="margin-top:12px;">08039597199 | 08185193838</li>
+            <li>07013658839</li>
+            <li style="margin-top:12px;">almeerodacademy026@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Al-Meerod Academy. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
